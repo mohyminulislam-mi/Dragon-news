@@ -1,7 +1,11 @@
 import React from "react";
 
 const Home = () => {
-  return <div>This is home</div>;
+  return (
+    <div>
+      <h1>This is home</h1>
+    </div>
+  );
 };
 
 export default Home;
