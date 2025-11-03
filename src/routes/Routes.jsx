@@ -3,6 +3,7 @@ import MainLayout from "../layout/MainLayout";
 import Home from "../pages/home/Home";
 import Contact from "../pages/contact/Contact";
 import CategorieNews from "../components/CategorieNews";
+import LeftNews from "../components/LeftNews";
 
 const router = createBrowserRouter([
   {
@@ -13,9 +14,10 @@ const router = createBrowserRouter([
       { path: "/contact", Component: Contact },
       {
         path: "/categorie/:id",
-        Component: CategorieNews ,
-        loader: () => fetch('/news.json')
+        Component: CategorieNews,
+        loader: () => fetch("/news.json"),
       },
+      { path: "/LeftNews", Component: LeftNews },
     ],
   },
 ]);

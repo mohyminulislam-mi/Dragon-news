@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import Categories from "../../components/Categories";
+import LeftNews from "../../components/LeftNews";
 
 const LeftAside = () => {
   return (
@@ -9,6 +10,8 @@ const LeftAside = () => {
       >
         <Categories></Categories>
       </Suspense>
+      {/* -- LeftNews - */}
+      <LeftNews></LeftNews>
     </div>
   );
 };
