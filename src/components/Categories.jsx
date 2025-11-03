@@ -10,7 +10,13 @@ const Categories = () => {
       <h1 className="font-semibold">All Caterogy {categories.length}</h1>
       <div className="grid grid-cols-1 mt-5">
         {categories.map((categorie) => (
-          <NavLink key={categorie.id}>{categorie.name}</NavLink>
+          <NavLink
+            to={`/categorie/${categorie.id}`}
+            key={categorie.id}
+            className="py-2 text-center font-semibold mt-2 border-0 bg-base-100 hover:bg-base-200"
+          >
+            {categorie.name}
+          </NavLink>
         ))}
       </div>
     </div>
